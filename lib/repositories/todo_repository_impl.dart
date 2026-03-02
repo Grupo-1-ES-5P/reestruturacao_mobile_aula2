@@ -15,7 +15,7 @@ class TodoRepositoryImpl implements TodoRepository {
     await _local.saveLastSync(now);
 
     final lastSync = await _local.getLastSync();
-    final label = lastSync == null ? null : lastSync.toLocal().toString();
+    final label = lastSync?.toLocal().toString();
 
     return TodoFetchResult(
       todos: models.map((m) => Todo(id: m.id, title: m.title, completed: m.completed)).toList(),
