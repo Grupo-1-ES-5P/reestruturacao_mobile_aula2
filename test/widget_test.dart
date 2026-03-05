@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:todo_refatoracao_baguncado/ui/app_root.dart';
-import 'package:todo_refatoracao_baguncado/viewmodels/todo_viewmodel.dart';
+import 'package:todo_refatoracao_baguncado/core/presentation/ui/app_root.dart';
+import 'package:todo_refatoracao_baguncado/features/todo/presentation/viewmodels/todo_viewmodel.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
